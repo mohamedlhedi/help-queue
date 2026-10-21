@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
-    $table->string('name');
-    $table->string('topic');
-    $table->text('description')->nullable();
-    $table->string('status')->default('waiting');
-    $table->timestamps();
+            $table->string('name');
+            $table->string('topic');
+            $table->text('description')->nullable();
+            $table->string('status')->default('waiting');
+            $table->timestamps();
         });
     }
 
